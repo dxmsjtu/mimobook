@@ -11,7 +11,7 @@
 %https://github.com/emilbjornson/mimobook
 
 close all;
-clear;
+clear all;
 
 DClevel1 = 0;
 DClevel2 = 1;
@@ -40,7 +40,7 @@ end
 %% Plot the simulation results
 set(groot,'defaultAxesTickLabelInterpreter','latex');
 
-figure;
+figure; fontsize =24; 
 hold on; box on; grid on;
 plot(threshold,1-PD,'k','LineWidth',2)
 plot(threshold,PFA,'r--','LineWidth',2)
@@ -55,7 +55,7 @@ ylim([0 1]);
 xlabel('$\gamma$','Interpreter','latex');
 ylabel('Probability','Interpreter','latex');
 legend({'$P_{\rm M}$', '$P_{\rm FA}$', '$P_{\rm e}$'},'Interpreter','latex');
-set(gca,'fontsize',16);
+set(gca,'fontsize',fontsize);
 
 figure;
 hold on; box on; grid on;
@@ -72,6 +72,6 @@ ylim([0 1]);
 xlabel('$\gamma$','Interpreter','latex');
 ylabel('Probability','Interpreter','latex');
 legend({'$P_{\rm M}$', '$P_{\rm FA}$', '$P_{\rm e}$'},'Interpreter','latex');
-set(gca,'fontsize',16);
+set(gca,'fontsize',fontsize);
 
 
